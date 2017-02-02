@@ -5,7 +5,7 @@ absTol = 1e-4;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % changing parameter to adjust
-r_range= 30;
+r_range= 20;
 r_start = 1e-5;
 hr = 1e-2;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -13,7 +13,7 @@ hr = 1e-2;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % epsilon iteration
-for epsilon = [0.01:0.01:0.09]
+for epsilon = [0.40:0.01:1.00]
     dphi0 = 0.0;
     sigma = (3.0*(epsilon+1)+sqrt(9.0*(1+epsilon)^2-8))/4.0;
     sigma = 0.99999999999*sigma;
